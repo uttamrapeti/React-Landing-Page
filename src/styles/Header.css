@@ -6,7 +6,6 @@
 }
 .search-area {
     position: relative;
-    width: 45%;
     min-width: 45%;
     border: 1px solid rgba(129,129,129,0.4);
     font-size: 13px;

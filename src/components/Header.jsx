@@ -9,14 +9,14 @@ const Header = () => {
         <div className='header-main'>
             <div className="flex flex-col">
                 <div className="md:border-b py-2">
-                    <div className="container mx-auto">
+                    <div className="lg:container mx-auto px-4 lg:px-0">
                         <div className="flex justify-between gap-2">
                             <Link to="/" className='logo'><img className="ml-2" src={logo} alt="Logo" style={{height: "40px"}}/></Link>
                             <Search/>
-                            <nav>
-                                <ul className="hidden md:flex">
-                                    <li className="float-left"><Link to="/">Log In / Sign Up</Link></li>
-                                    <li className="float-left"><Link to="/contact" className='descarga_la_app'>Download the app</Link></li>
+                            <nav className='hidden md:flex justify-end'>
+                                <ul className="flex justify-between items-center">
+                                    <li className="w-auto"><Link to="/">Log In / Sign Up</Link></li>
+                                    <li className="w-full"><Link to="/contact" className='descarga_la_app'>Download the app</Link></li>
                                 </ul>
                             </nav>
                         </div>

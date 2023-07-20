@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/fontawesome-free-solid'
 
 const Search = () => {
-    
     return (
         <div className='search-area'>
             <form action="/" method="get" className='minisearch'>
