@@ -62,4 +62,6 @@ nav ul a.descarga_la_app {
     background: #01484C;
     border-radius: 25px;
     padding: 10px 40px;
+    size: 80%;
+    white-space: nowrap;
 }
