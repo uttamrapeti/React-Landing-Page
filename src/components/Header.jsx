@@ -29,8 +29,8 @@ const Header = () => {
                        
                     </Nav>
                     <div className='topEnd'>
-                            <Nav.Link href="#action1">Login</Nav.Link>
-                            <Nav.Link href="#action2">Sign In</Nav.Link>
+                            <Nav.Link href="#action1" className='text'>Login</Nav.Link>
+                            <Nav.Link href="#action2" className='text'>Sign In</Nav.Link>
                     </div>
 
 
