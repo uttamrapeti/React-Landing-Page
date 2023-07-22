@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Page.css';
 import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-headless-accordion";
 
 const Faq = () => {

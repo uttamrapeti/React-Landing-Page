@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Page.css';
 import HomeSlider from './HomeSlider';
 import { Link } from "react-router-dom";
 import Row from 'react-bootstrap/Row';
@@ -12,8 +11,11 @@ const Home = () => {
     <Container fluid>
       <Row>
         <Col lg={4}><HomeLeft /></Col>
-        <Col lg={8}><HomeSlider /></Col>
+        <Col lg={8}></Col>
         <Link to="/contact" className='descarga_la_app'>Download the app</Link>
+      </Row>
+      <Row>
+        <Col><HomeSlider/></Col>
       </Row>
     </Container>
 

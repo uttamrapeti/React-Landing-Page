@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Header.css'
 import { Link } from "react-router-dom";
 import Search from './Search';
 import logo from '../assets/logo.png'
@@ -10,9 +9,6 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Header = () => {
     return (
-
-
-
         <Navbar expand="lg">
             <Container>
                 <Navbar.Brand href="#home" >
