@@ -3,27 +3,46 @@ import '../styles/Header.css'
 import { Link } from "react-router-dom";
 import Search from './Search';
 import logo from '../assets/logo.png'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 
 const Header = () => {
     return (
-        <div className='header-main'>
-            <div className="flex flex-col">
-                <div className="md:border-b py-2">
-                    <div className="container mx-auto">
-                        <div className="flex justify-between gap-2">
-                            <Link to="/" className='logo'><img className="ml-2" src={logo} alt="Logo" style={{height: "40px"}}/></Link>
-                            <Search/>
-                            <nav>
-                                <ul className="hidden md:flex">
-                                    <li className="float-left"><Link to="/">Log In / Sign Up</Link></li>
-                                    <li className="float-left"><Link to="/contact" className='descarga_la_app'>Download the app</Link></li>
-                                </ul>
-                            </nav>
-                        </div>
+
+
+
+        <Navbar expand="lg">
+            <Container>
+                <Navbar.Brand href="#home" >
+                    <Link to="/" className='logo'><img className="ml-2" src={logo} alt="Logo" style={{ height: "40px" }} /></Link>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll" className='w-100'>
+                    <Nav
+                        className="me-auto my-2 my-lg-0 top"
+                        style={{ maxHeight: '100px' }}
+                        navbarScroll
+                    >
+                        <Search />
+                       
+                    </Nav>
+                    <div className='topEnd'>
+                            <Nav.Link href="#action1">Login</Nav.Link>
+                            <Nav.Link href="#action2">Sign In</Nav.Link>
                     </div>
-                </div>
-            </div>
-        </div>
+
+
+
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+
+
+
+
+
     )
 }
 

@@ -57,11 +57,3 @@
 .search-area .minisearch input {
     flex: 1;
 }
-nav ul a.descarga_la_app {
-    color: #00E2A9 !important;
-    background: #01484C;
-    border-radius: 25px;
-    padding: 10px 40px;
-    size: 80%;
-    white-space: nowrap;
-}

@@ -1,22 +1,19 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/fontawesome-free-solid'
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const Search = () => {
     
     return (
-        <div className='search-area'>
-            <form action="/" method="get" className='minisearch'>
-        
-                <input
-                    type="text"
-                    id="header-search"
-                    placeholder="Search..."
-                    name="search" 
-                />
-                <button type="submit" className='action'><FontAwesomeIcon icon={faSearch} /></button>
-            </form>
-        </div>
+        <Form className="d-flex w-50">
+        <Form.Control
+            type="search"
+            placeholder="Search"
+            className="me-2"
+            aria-label="Search"
+        />
+        <Button variant="outline-success">Search</Button>
+    </Form>
     )
 }
 
