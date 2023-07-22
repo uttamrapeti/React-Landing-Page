@@ -5,13 +5,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import HomeLeft from './HomeLeft';
 import Container from 'react-bootstrap/Container';
+import HomeRight from './HomeRight';
 
 const Home = () => {
   return (
     <Container fluid>
       <Row>
         <Col lg={4}><HomeLeft /></Col>
-        <Col lg={8}></Col>
+        <Col lg={8} className='right'><HomeRight/></Col>
         <Link to="/contact" className='descarga_la_app'>Download the app</Link>
       </Row>
       <Row>

@@ -61,6 +61,22 @@ img{
   width: 70%;
 }
 
+.right{
+  border: 1px solid black;
+}
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainL{
+  
+  width: 20%;
+  
+}
+
 
 
 
